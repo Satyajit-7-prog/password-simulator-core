@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attack History - Password Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🗄️ MySQL Database Log</h1>
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="attack-box">
+            <h3>Recent Attack History</h3>
+            <p>Live data pulled directly from your local MySQL Server</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attack Type</th>
+                        <th>Target</th>
+                        <th>Status</th>
+                        <th>Time (s)</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                    <tr><td colspan="4" style="text-align:center;">Loading database... ⏳</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

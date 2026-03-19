@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attacks - Password Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🗡️ Password Attacks</h1>
+        <a href="index.html" style="color: #00ff00;">Back to Home</a>
+
+        <div class="attack-box">
+            <h3>Dictionary Attack</h3>
+            <p>Checks against common_passwords.txt</p>
+            <input type="text" id="dictInput" placeholder="Enter target password...">
+            <button onclick="runDictionaryAttack()">Run Attack</button>
+            <div id="dictResult" class="result-box"></div>
+        </div>
+
+        <div class="attack-box">
+            <h3>Brute Force Attack</h3>
+            <p>Tries every combination (Max 4 chars)</p>
+            <input type="text" id="bruteInput" placeholder="Enter short password (e.g. abc)...">
+            <button onclick="runBruteForce()">Run Attack</button>
+            <div id="bruteResult" class="result-box"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
